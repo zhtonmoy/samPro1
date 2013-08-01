@@ -1,6 +1,6 @@
 <div id="login_form">
     <?php
-        //Checking whether the session exists
+        //Checking whether the session exists and giving corresponding message
         if($this->session->userdata('noRecExist')==TRUE){
            $this->session->set_userdata('noRecExist',FALSE);
            echo '<h5>No record found. Please input a correct Modification code</h5>';
